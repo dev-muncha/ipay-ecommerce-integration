@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Payment</h2>
+<p>This is a demo application for integrating iPay as a payment gateway.</p>
+
+<form method="post" action="@Url.Action("ProcessIpay", "Home")">
+    <p>Order Details</p>
+    <p>Amount: Rs. 10</p>
+    <p><button type="submit" class="btn btn-primary">Pay Through iPay</button></p>
+</form>
+
